@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+{%extends "mainTemplate.html"%}
+{%block title%}Profile{%endblock%}
+{%block content%}
+<head>
+</head>
+<body>
+    <div class="container-fluid d-flex">
+        <div class="card w-50 my-auto mx-auto">
+        <img src="{{ url_for('static', filename='MSU Logo.jpg') }}" class="rounded-circle w-25 mx-auto">
+        <ul class="list-group list-group-flush text-center">
+            <li class="list-group-item">{%print(session.get("first") + " " + session.get('last'))%}</li>
+            <li class="list-group-item">Email: {%print(session['user'])%} </li>
+            <li class="list-group-item">Phone: {%print(session['phone'])%}</li>
+            <li class="list-group-item">StarID: {%print(session['starId'])%}</li>
+        </ul>
+        </div>
+    </div>
+    {%endblock%}
+</body>
