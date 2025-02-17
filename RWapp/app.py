@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = "Aidan"
 bcrypt = Bcrypt(app)
 
-app.config['MYSQL_HOST'] = 'srv1356.hstgr.io'
+app.config['MYSQL_HOST'] = 'srv1356.hstgr.io' #change these when the migrate works
 app.config['MYSQL_USER'] = 'u612285796_root'
 app.config['MYSQL_PASSWORD'] = 'ILoveMae123'
 app.config['MYSQL_DB'] = 'u612285796_firstcohort'
