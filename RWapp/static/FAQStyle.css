@@ -1,0 +1,19 @@
+/* static/css/style.css */
+.faq-header {
+    background-color: #46166B; /* MNSU Dark Purple */
+    color: #FFC72C; /* MNSU Gold */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.faq-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.faq-subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
