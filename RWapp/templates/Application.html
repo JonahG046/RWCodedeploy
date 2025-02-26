@@ -4,8 +4,46 @@
 {%block title%}Application{%endblock%}
 {%block content%}
 <head>
+        <h3 class="ms-3">Software Engineer Application</h3>
 </head>
 <body>
-{%endblock%}
-</body>
-</html>
+      <div class="card-body">
+          <form action="/SignUp" method="POST">
+            <div class="row px-5 mx-5">
+              <div class="form-group col">
+                <label for="first">First Name</label>
+                <input type="text" class="form-control" id="first" name="first" placeholder="First Name" required>
+              </div>
+              <div class="form-group col">
+                <label for="last">Last Name</label>
+                <input type="text" class="form-control" id="last" name="last" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="row px-5 mx-5">
+            <div class="form-group col">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group col">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+            </div>
+            <div class="row px-5 mx-5">
+              <div class="form-group col">
+                <label for="starid">Star-ID</label>
+                <input type="text" class="form-control" id="starid" name="starid" placeholder="No Star-Id? Leave this blank!">
+              </div>
+              <div class="form-group col">
+                <label for="phone">Phone Number</label>
+                <input type="int" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </container>
+    {%endblock%}
+  </body>
+  </html>
